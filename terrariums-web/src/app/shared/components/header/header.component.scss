@@ -1,4 +1,13 @@
-//@import '~@angular/material/theming';
+@import '~@angular/material/theming';
+
+a {
+    color: black;
+    font-size: x-large;
+}
+
+a:hover, a:active {
+    color: darkgreen;
+}
 
 .animations {
     -webkit-transition: 0.25s linear all;
@@ -16,9 +25,45 @@ mat-toolbar {
 }
 
 .mat-toolbar-large {
-    height: 100px;
+    height: 6vw;
 }
 
 .mat-toolbar-small {
-    height: 65px;
+    height: 4vw;
+}
+
+.nav-links {
+    margin-top:auto;
+    margin-bottom: auto;
+}
+
+.nav-links-large {
+    padding: 2vw;
+}
+
+.nav-links-small {
+    padding: 1vw;
+}
+
+.hover-underline-animation {
+    display: inline-block;
+    position: relative;
+}
+
+.hover-underline-animation:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: darkgreen;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
 }

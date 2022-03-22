@@ -1,4 +1,5 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-header',
@@ -12,7 +13,7 @@ export class HeaderComponent implements OnInit, OnDestroy
 
   private scrollHeight: number = 0;
 
-  constructor()
+  constructor (private router: Router)
   {
     this.aniamtedHeader();
   }

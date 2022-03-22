@@ -1,4 +1,13 @@
-<mat-toolbar [ngClass] ="(shrinkHeader)? 'mat-toolbar-small animations' : 'mat-toolbar-large animations'">
-
+<mat-toolbar [ngClass]="(shrinkHeader)? 'mat-toolbar-small animations' : 'mat-toolbar-large animations'">
+  <!--
+    logo:
+    <img [ngClass]="(shrinkHeader)? 'logo-small animations' : 'logo-large animations'"
+          alt="Terrarium Logo"
+          src="../../../../assets/img/terrarium_logo.png" />
+  -->
+  <div fxLayout="row" fxFlex="100%">
+    <a [ngClass]="(shrinkHeader)? 'nav-links-small animations hover-underline-animation' : 'nav-links-large animations hover-underline-animation'" mat-button routerLink=""> Home </a>
+    <a class="nav-links animations hover-underline-animation" mat-button routerLink="home"> Home </a>
+  </div>
 </mat-toolbar>
-<div style="margin-top: 170px;">test</div>
+<div style="margin-top: 10vw;"></div>
