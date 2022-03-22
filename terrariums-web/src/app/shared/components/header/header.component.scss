@@ -1,0 +1,24 @@
+//@import '~@angular/material/theming';
+
+.animations {
+    -webkit-transition: 0.25s linear all;
+    -moz-transition: 0.25s linear all;
+    -o-transition: 0.25s linear all;
+    transition: 0.25s linear all;
+}
+
+mat-toolbar {
+    width: 100%;
+    background-color: #adadad;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.mat-toolbar-large {
+    height: 100px;
+}
+
+.mat-toolbar-small {
+    height: 65px;
+}
