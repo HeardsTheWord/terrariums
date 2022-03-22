@@ -37,5 +37,22 @@ export class HeaderComponent implements OnInit, OnDestroy
         this.shrinkHeader = true;
       }
     }
+
+    /*
+     if (document.scrollingElement?.scrollTop)
+     {
+        if (document.scrollingElement?.scrollTop < this.scrollHeight)
+        {
+            // Scrolling up - animate larger navbar
+            this.shrinkHeader = false;
+        }
+        else
+        {
+            this.shrinkheader = true;
+        }
+
+        this.scrollHeight = document.scrollingElement?.scrollTop;
+     }
+     */ 
   }
 }
