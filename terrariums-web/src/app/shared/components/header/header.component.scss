@@ -1,5 +1,3 @@
-@import '~@angular/material/theming';
-
 a {
     color: black;
     font-size: x-large;
@@ -22,6 +20,7 @@ mat-toolbar {
     position: fixed;
     top: 0;
     left: 0;
+    z-index:999;
 }
 
 .mat-toolbar-large {
@@ -67,3 +66,4 @@ mat-toolbar {
     transform: scaleX(1);
     transform-origin: bottom left;
 }
+
