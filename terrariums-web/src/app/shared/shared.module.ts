@@ -6,6 +6,7 @@ import { MDBBootstrapModule, NavbarModule } from 'angular-bootstrap-md';
 
 import { MaterialModule } from './material/material.module';
 
+
 @NgModule({
   declarations: [],
   imports: [
