@@ -4,6 +4,10 @@
 
 .content {
   padding: 1vw;
+  max-width: 80%;
+  margin: auto;
+  justify-content: center;
+  justify-items: center;
 }
 
 .content > mat-card {
@@ -17,4 +21,18 @@
 
 .img-container{
     //margin: 2%;
+}
+
+
+/*
+.example-sidenav-content {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+    */
+
+.example-sidenav {
+  padding: 20px;
 }

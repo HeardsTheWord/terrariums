@@ -1,13 +1,20 @@
-<div class="filter-content">
-  <div fxLayout="row wrap" fxLayoutGap="1vw grid">
-    <div *ngFor="let filterObject of filterOptions | keyvalue">
-      <div *ngFor="let filterOption of filterObject.value">
-        <input type="checkbox"  (change)="filterBySelection(filterObject.key, filterOption)" />
-        <span>{{filterOption}}</span>
+<mat-drawer-container class="example-container" autosize>
+  <mat-drawer #drawer class="example-sidenav" mode="side">
+    <div fxLayout="row wrap" fxLayoutGap="1vw grid">
+      <div *ngFor="let filterObject of filterOptions | keyvalue">
+        <div *ngFor="let filterOption of filterObject.value">
+          <input type="checkbox" (change)="filterBySelection(filterObject.key, filterOption)" />
+          <span>{{filterOption}}</span>
+        </div>
       </div>
     </div>
+  </mat-drawer>
+
+  <div class="example-sidenav-content">
+    <button type="button" mat-button (click)="drawer.toggle()">
+      <mat-icon>filter_list</mat-icon>Filter
+    </button>
   </div>
-</div>
 
   <div class="content">
     <div fxLayout="row wrap" fxLayoutGap="1vw grid">
@@ -27,9 +34,10 @@
             </p>
           </mat-card-content>
           <mat-card-actions>
-            <button mat-button>Add To Cart</button>
+            <button mat-button><mat-icon>add_shopping_cart</mat-icon>Add To Cart</button>
           </mat-card-actions>
         </mat-card>
       </div>
     </div>
   </div>
+</mat-drawer-container>

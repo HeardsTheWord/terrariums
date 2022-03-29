@@ -14,6 +14,8 @@ export class ShopComponent implements OnInit {
   public terrariumInfo: TerrariumInfo[] = [];
   public filterOptions: Map<string, string[]> = new Map<string, string[]>();
 
+  public showSideNav: boolean = false;
+
   filteredCards = new MatTableDataSource(this.terrariumInfo);
 
   constructor ()
