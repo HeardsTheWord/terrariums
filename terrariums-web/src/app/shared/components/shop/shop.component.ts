@@ -109,10 +109,13 @@ export class ShopComponent implements OnInit {
     }
   }
 
-  selectTerrarium(): void
+  selectTerrarium(selectedT: TerrariumInfo): void
   {
-    console.log('test');
-    //console.log(terrarium);
+    console.log(selectedT);
   }
 
+  addToShoppingCart(selectedT: TerrariumInfo): void
+  {
+    console.log('addToCart');
+  }
 }
